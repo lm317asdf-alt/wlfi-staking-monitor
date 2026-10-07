@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>WLFI Staking Dashboard</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#0a0e27;color:#e0e6ff;padding:16px;min-height:100vh}
+.container{max-width:640px;margin:0 auto}
+h1{font-size:22px;text-align:center;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sub{text-align:center;font-size:12px;color:#8892b0;margin:4px 0 20px}
+.card{background:#131829;border:1px solid #1e2945;border-radius:16px;padding:20px;margin-bottom:16px}
+.ct{font-size:14px;color:#8892b0;margin-bottom:8px}
+.cv{font-size:28px;font-weight:700}
+.cc{font-size:13px;margin-top:6px}
+.up{color:#4ade80} .down{color:#f87171} .warn{color:#fbbf24}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.box{background:#131829;border:1px solid #1e2945;border-radius:12px;padding:14px;text-align:center}
+.bl{font-size:11px;color:#8892b0}
+.bv{font-size:18px;font-weight:600;margin-top:4px}
+.chart{width:100%;height:auto;display:block}
+.badge{display:inline-block;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-weight:700;padding:4px 12px;border-radius:20px;font-size:14px}
+.src{font-size:10px;color:#5a6a8a;margin-top:6px;line-height:1.4}
+.foot{text-align:center;font-size:11px;color:#5a6a8a;margin-top:16px;line-height:1.6}
+</style></head>
+<body>
+<div class="container">
+<h1>🔒 WLFI Staking</h1>
+<p class="sub">链上实时质押监控 · 1 个数据点</p>
+<div class="card">
+<div class="ct">当前总质押量</div>
+<div class="cv">36,554,321 <span style="font-size:14px;color:#8892b0">WLFI</span></div>
+<div class="cc up">▲ 累计变化 +0.00%</div>
+</div>
+<div class="grid">
+<div class="box"><div class="bl">WLFI 价格</div><div class="bv ">$0.054400</div><div class="src">来源: Binance</div></div>
+<div class="box"><div class="bl">质押价值</div><div class="bv">$1,988,555</div></div>
+<div class="box"><div class="bl">推算 APY</div><div class="bv"><span class="badge">127.5%</span></div></div>
+<div class="box"><div class="bl">奖励池 USD1</div><div class="bv" style="font-size:15px">1,250,000</div></div>
+</div>
+<div class="card"><div class="ct">📈 质押量趋势</div><svg viewBox="0 0 700 270" class="chart"><rect width="700" height="270" fill="#131829"/><text x="350" y="135" fill="#5a6a8a" text-anchor="middle" font-size="13">运行 2 次以上才会出现曲线</text></svg></div>
+<div class="card"><div class="ct">💰 WLFI 价格趋势</div><svg viewBox="0 0 700 270" class="chart"><rect width="700" height="270" fill="#131829"/><text x="350" y="135" fill="#5a6a8a" text-anchor="middle" font-size="13">运行 2 次以上才会出现曲线</text></svg></div>
+<div class="card"><div class="ct">📊 推算 APY 趋势</div><svg viewBox="0 0 700 270" class="chart"><rect width="700" height="270" fill="#131829"/><text x="350" y="135" fill="#5a6a8a" text-anchor="middle" font-size="13">运行 2 次以上才会出现曲线</text></svg></div>
+<div class="card"><div class="ct">🪙 奖励池 USD1 余额</div><svg viewBox="0 0 700 270" class="chart"><rect width="700" height="270" fill="#131829"/><text x="350" y="135" fill="#5a6a8a" text-anchor="middle" font-size="13">运行 2 次以上才会出现曲线</text></svg></div>
+<div class="foot">最后更新: 2026-10-07 16:45:43 UTC<br>APY 根据 1.25M/180天 线性释放模型自动推算<br>
+奖励池 = 合约内 USD1 实时余额（穿透代理读取）</div>
+</div>
+</body></html>
